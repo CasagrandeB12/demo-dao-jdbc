@@ -129,10 +129,10 @@ public class SellerDaoJDBC implements SellerDao {
 			
 			//testa se na consulta retornou algum valor
 			if(rs.next()) {
-				//instanciação de um departamento e seus valores
+				//instanciação de um department e seus valores
 				Department dep = instantiateDepartment(rs);
 				
-				//instanciação de um vendedor e seus valores
+				//instanciação de um seller e seus valores
 				//declaração com o "nome" da tabela
 				Seller obj = instantiateSeller (rs, dep);
 				return obj;
